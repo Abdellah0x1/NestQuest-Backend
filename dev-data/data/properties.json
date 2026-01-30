@@ -1,0 +1,382 @@
+[
+  {
+    "title": "Private twin/double room with a private",
+    "description": "Enjoy the perfect blend of seaside access and comfortable relaxation. This bright, stylish room features two cozy twin beds...",
+    "type": "rent",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 45,
+    "rating": 5,
+    "reviewsCount": 8,
+    "price": 219,
+    "imageCover": "https://a0.muscache.com/im/pictures/hosting/Hosting-1569912760874727191/original/fb034bec-5a03-4f0f-8ad7-096eac7ae2ea.jpeg",
+    "images": [
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1569912760874727191/original/fb034bec-5a03-4f0f-8ad7-096eac7ae2ea.jpeg"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [-9.680158, 30.51177]
+    }
+  },
+  {
+    "title": "Private Double Room King Bed",
+    "description": "Welcome to your cozy hideaway in the heart of Tamraght. This private double room with king size bed...",
+    "type": "rent",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 50,
+    "rating": 4.89,
+    "reviewsCount": 9,
+    "price": 175,
+    "imageCover": "https://a0.muscache.com/im/pictures/hosting/Hosting-1507281915933745427/original/fd7c2237-1fa4-4f73-8820-82735c35e112.jpeg",
+    "images": [
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1507281915933745427/original/fd7c2237-1fa4-4f73-8820-82735c35e112.jpeg"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [-9.6773, 30.511]
+    }
+  },
+  {
+    "title": "Elegant Studio/No opposite Maârif City",
+    "description": "Brand NEW studio with terrace, in a modern building and WITHOUT VIS-A-VIS in the heart of Maârif, Casablanca...",
+    "type": "rent",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 60,
+    "rating": 5,
+    "reviewsCount": 8,
+    "price": 263,
+    "imageCover": "https://a0.muscache.com/im/pictures/hosting/Hosting-1582396520710765862/original/1771739d-77e8-4e14-a415-7ead5493565d.jpeg",
+    "images": [
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1582396520710765862/original/1771739d-77e8-4e14-a415-7ead5493565d.jpeg"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [-7.6346, 33.586]
+    }
+  },
+  {
+    "title": "Cozy and authentic apartment in Essaoui",
+    "description": "Cozy apartment with authentic charm in Essaouira. Welcome to MOGA Apartment, a quiet, peaceful and modern accommodation...",
+    "type": "rent",
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "area": 85,
+    "rating": 5,
+    "reviewsCount": 8,
+    "price": 195,
+    "imageCover": "https://a0.muscache.com/im/pictures/hosting/Hosting-1550146323380942697/original/285f0af7-bd5d-40a7-a01c-1baff3f6ab1e.jpeg",
+    "images": [
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1550146323380942697/original/285f0af7-bd5d-40a7-a01c-1baff3f6ab1e.jpeg"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [-9.73363, 31.45167]
+    }
+  },
+  {
+    "title": "Room surrounded by dunes",
+    "description": "Take it easy at this unique and tranquil getaway. A place with 6 cabins to share with a few travelers...",
+    "type": "rent",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 30,
+    "rating": 4.98,
+    "reviewsCount": 55,
+    "price": 279,
+    "imageCover": "https://a0.muscache.com/im/pictures/miso/Hosting-40910133/original/60c0ce2b-f0a4-44c5-839d-5a05502c2ab7.jpeg",
+    "images": [
+      "https://a0.muscache.com/im/pictures/miso/Hosting-40910133/original/60c0ce2b-f0a4-44c5-839d-5a05502c2ab7.jpeg"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [-4.01286, 31.07974]
+    }
+  },
+  {
+    "title": "Bright & Cozy Studio – Marina Hassan II",
+    "description": "Enjoy our modern, comfortable and luxurious studio, perfect for couples, friends or business travelers...",
+    "type": "rent",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 55,
+    "rating": 4.97,
+    "reviewsCount": 62,
+    "price": 254,
+    "imageCover": "https://a0.muscache.com/im/pictures/airflow/Hosting-1500249839864816288/original/2d9d68a8-b578-449b-820f-7a097317353f.jpg",
+    "images": [
+      "https://a0.muscache.com/im/pictures/airflow/Hosting-1500249839864816288/original/2d9d68a8-b578-449b-820f-7a097317353f.jpg"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [-7.63631, 33.60076]
+    }
+  },
+  {
+    "title": "Dar Yellow • Unique Ocean View Terrace",
+    "description": "Dar Yellow is an ocean-view home near Aftas Beach — bright, calm, and full of life...",
+    "type": "rent",
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "area": 90,
+    "rating": 5,
+    "reviewsCount": 5,
+    "price": 405,
+    "imageCover": "https://a0.muscache.com/im/pictures/hosting/Hosting-1568403325154310410/original/bdb758ad-4cf5-4395-8a87-8ec8057d2958.jpeg",
+    "images": [
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1568403325154310410/original/bdb758ad-4cf5-4395-8a87-8ec8057d2958.jpeg"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [-10.05136, 29.57614]
+    }
+  },
+  {
+    "title": "A pretty studio in the city center",
+    "description": "Keep it simple at this peaceful and centrally-located place. A bedroom with a double bed and living room...",
+    "type": "rent",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 40,
+    "rating": 5,
+    "reviewsCount": 3,
+    "price": 108,
+    "imageCover": "https://a0.muscache.com/im/pictures/hosting/Hosting-1572770398982375498/original/60e98c9c-9778-44a2-8c07-552636ae0858.jpeg",
+    "images": [
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1572770398982375498/original/60e98c9c-9778-44a2-8c07-552636ae0858.jpeg"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [-9.7581, 31.5078]
+    }
+  },
+  {
+    "title": "Double Bedroom in Charming Guesthouse",
+    "description": "A peaceful stay, perfect for couples, solo travelers, and remote workers, with all the comfort you need...",
+    "type": "rent",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 35,
+    "rating": 5,
+    "reviewsCount": 61,
+    "price": 231,
+    "imageCover": "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTE5NDExNTg4NzczNTY4MjA4Nw%3D%3D/original/5fc4102e-916f-42d8-b816-4fd2cfdd4532.jpeg",
+    "images": [
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTE5NDExNTg4NzczNTY4MjA4Nw%3D%3D/original/5fc4102e-916f-42d8-b816-4fd2cfdd4532.jpeg"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [-9.67801, 30.51026]
+    }
+  },
+  {
+    "title": "Suite with private terrace | Hassan II",
+    "description": "Experience Casablanca from this stylish private room with a private terrace overlooking the majestic Hassan II Mosque...",
+    "type": "rent",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 20,
+    "rating": 4.96,
+    "reviewsCount": 112,
+    "price": 229,
+    "imageCover": "https://a0.muscache.com/im/pictures/miso/Hosting-1100157572286210519/original/6d230e9c-e2d9-4024-b0d1-06e9dee25c6d.jpeg",
+    "images": [
+      "https://a0.muscache.com/im/pictures/miso/Hosting-1100157572286210519/original/6d230e9c-e2d9-4024-b0d1-06e9dee25c6d.jpeg"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [-7.63535, 33.59436]
+    }
+  },
+  {
+    "title": "Bed in Mixed dorm with small Breakfast",
+    "description": "Welcome to Muza Guest House & Café! A cosy, vibrant surf-house right in the heart of the surf village of Tamraght...",
+    "type": "rent",
+    "bedrooms": 1,
+    "bathrooms": 2,
+    "area": 120,
+    "rating": 5,
+    "reviewsCount": 1,
+    "price": 59,
+    "imageCover": "https://a0.muscache.com/im/pictures/hosting/Hosting-1569474306205838837/original/7fdace20-1d22-49cf-94b4-c19deae472a1.jpeg",
+    "images": [
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1569474306205838837/original/7fdace20-1d22-49cf-94b4-c19deae472a1.jpeg"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [-9.67695, 30.51017]
+    }
+  },
+  {
+    "title": "Villa OutMama charme & comfort",
+    "description": "Discover our beautiful villa located just 15 km from the city of Essaouira. Built on a spacious 5000m² lot...",
+    "type": "rent",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "area": 500,
+    "rating": 4.95,
+    "reviewsCount": 44,
+    "price": 539,
+    "imageCover": "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEwMTQxNzk3MTA3NjQ3MTkwNA%3D%3D/original/d6b3ded5-9430-4f71-b4a2-1e8cd3082528.jpeg",
+    "images": [
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTEwMTQxNzk3MTA3NjQ3MTkwNA%3D%3D/original/d6b3ded5-9430-4f71-b4a2-1e8cd3082528.jpeg"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [-9.6709, 31.4343]
+    }
+  },
+  {
+    "title": "Dar Dahlia Atlas Valley",
+    "description": "Welcome to Dar Dahlia in Ourika, a peaceful haven surrounded by breathtaking landscapes! Enjoy its authentic Moroccan architecture...",
+    "type": "rent",
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "area": 95,
+    "rating": 4.96,
+    "reviewsCount": 69,
+    "price": 363,
+    "imageCover": "https://a0.muscache.com/im/pictures/miso/Hosting-1011028393943221728/original/5532278a-4c29-40d2-93b4-f0c5e909ac9b.png",
+    "images": [
+      "https://a0.muscache.com/im/pictures/miso/Hosting-1011028393943221728/original/5532278a-4c29-40d2-93b4-f0c5e909ac9b.png"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [-7.7908, 31.3745]
+    }
+  },
+  {
+    "title": "Double room-Standard-Private Bathroom",
+    "description": "Standard Double Room with private bathroom. Guests must pay the local tourist tax of 25 dirhams, per person per night...",
+    "type": "rent",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 25,
+    "rating": 4.83,
+    "reviewsCount": 6,
+    "price": 233,
+    "imageCover": "https://a0.muscache.com/im/pictures/prohost-api/Hosting-53121675/original/37201464-cae3-47d2-9375-2e79975bedf4.jpeg",
+    "images": [
+      "https://a0.muscache.com/im/pictures/prohost-api/Hosting-53121675/original/37201464-cae3-47d2-9375-2e79975bedf4.jpeg"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [-7.98873, 31.61569]
+    }
+  },
+  {
+    "title": "Moroccan Premium Single Floor Youth",
+    "description": "The house is a detached Moroccan-style villa courtyard, fully equipped, safe and elegant environment...",
+    "type": "rent",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 40,
+    "rating": 5,
+    "reviewsCount": 4,
+    "price": 118,
+    "imageCover": "https://a0.muscache.com/im/pictures/hosting/Hosting-1515854740157076158/original/d6cecc7f-920e-45ae-ab63-f145c5f6f1e1.jpeg",
+    "images": [
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1515854740157076158/original/d6cecc7f-920e-45ae-ab63-f145c5f6f1e1.jpeg"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [-7.6125, 33.5822]
+    }
+  },
+  {
+    "title": "Safi Guest Farm",
+    "description": "This peaceful, spacious and comfortable accommodation offers a relaxing stay in Safi...",
+    "type": "rent",
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "area": 100,
+    "rating": 5,
+    "reviewsCount": 5,
+    "price": 105,
+    "imageCover": "https://a0.muscache.com/im/pictures/hosting/Hosting-1572710736208233397/original/f8174916-5ac5-4040-a366-dc1062f17a00.jpeg",
+    "images": [
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1572710736208233397/original/f8174916-5ac5-4040-a366-dc1062f17a00.jpeg"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [-9.15476, 32.3286]
+    }
+  },
+  {
+    "title": "Room in an apartment equipped 50 m",
+    "description": "Room in a nice fully equipped apartment in the city center 100 m from (SOUK EL HAD) is one of the largest...",
+    "type": "rent",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 50,
+    "rating": 5,
+    "reviewsCount": 8,
+    "price": 118,
+    "imageCover": "https://a0.muscache.com/im/pictures/hosting/Hosting-1567428870882276989/original/9bc20c98-2b71-486a-b763-ba5832cc53b5.jpeg",
+    "images": [
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1567428870882276989/original/9bc20c98-2b71-486a-b763-ba5832cc53b5.jpeg"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [-9.5763, 30.4138]
+    }
+  },
+  {
+    "title": "Women-Only Stylish Shared Room",
+    "description": "Stay at Zaya Surf, a cozy and stylish surf house in Tamraght. This women-only shared 4-bed room features handcrafted arches...",
+    "type": "rent",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 30,
+    "rating": 5,
+    "reviewsCount": 4,
+    "price": 99,
+    "imageCover": "https://a0.muscache.com/im/pictures/hosting/Hosting-1569774400755421676/original/3bcb6a45-4df3-493a-94c5-6acdb7b323e2.jpeg",
+    "images": [
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1569774400755421676/original/3bcb6a45-4df3-493a-94c5-6acdb7b323e2.jpeg"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [-9.6808, 30.5108]
+    }
+  },
+  {
+    "title": "NEW Cozy 1BR, City Center Gueliz",
+    "description": "This special place is close to everything, making it easy to plan your visit. Located in Gueliz...",
+    "type": "rent",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 55,
+    "rating": 5,
+    "reviewsCount": 1,
+    "price": 334,
+    "imageCover": "https://a0.muscache.com/im/pictures/hosting/Hosting-1598050543224415582/original/f4bb6e4a-3a46-4187-adb9-fafd52db1be8.png",
+    "images": [
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1598050543224415582/original/f4bb6e4a-3a46-4187-adb9-fafd52db1be8.png"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [-8.01945, 31.63568]
+    }
+  },
+  {
+    "title": "Bohemian Studio: Downtown Marrakesh",
+    "description": "Beautiful studio in the heart of Marrakech, combining modern Moroccan charm and high-end comfort. Enjoy a king size bed...",
+    "type": "rent",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 45,
+    "rating": 5,
+    "reviewsCount": 4,
+    "price": 379,
+    "imageCover": "https://a0.muscache.com/im/pictures/hosting/Hosting-1572377019221135047/original/5fe07ff3-10c9-4a5f-a1b8-66009e6c4b98.jpeg",
+    "images": [
+      "https://a0.muscache.com/im/pictures/hosting/Hosting-1572377019221135047/original/5fe07ff3-10c9-4a5f-a1b8-66009e6c4b98.jpeg"
+    ],
+    "location": {
+      "type": "Point",
+      "coordinates": [-8.021, 31.6396]
+    }
+  }
+]

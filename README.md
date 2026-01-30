@@ -26,6 +26,37 @@ REST API for property listings with user authentication. Built with Express and 
 - utils/ — helpers (errors, async wrapper, API features)
 - dev-data/ — seed script and sample data
 
+## Project Structure Tree
+
+```
+.
+├── app.js
+├── config.env
+├── package.json
+├── README.md
+├── server.js
+├── controllers/
+│   ├── authController.js
+│   ├── errorController.js
+│   ├── propertyController.js
+│   └── userController.js
+├── dev-data/
+│   ├── import-data.js
+│   └── data/
+│       └── properties.json
+├── models/
+│   ├── propertyModel.js
+│   └── userModel.js
+├── routes/
+│   ├── propertyRouter.js
+│   └── userRouter.js
+└── utils/
+  ├── APIFeatures.js
+  ├── AppError.js
+  ├── catchAsync.js
+  └── email.js
+```
+
 ## Requirements
 
 - Node.js 18+ recommended

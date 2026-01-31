@@ -9,11 +9,18 @@ const authController = require('../controllers/authController.js');
 userRouter.post('/signup',signup)
 userRouter.post('/login',login)
 
-
+//password reset
 userRouter.post('/forgotPassword', authController.forgotPassword);
-userRouter.post('/resetPassowrd/:token', authController.resetPassword);
+userRouter.post('/resetPassword/:token', authController.resetPassword);
 
+//updating user password
+userRouter.patch('/updatePassword', authController.protect, authController.updatePassword)
+//deleting user
+userRouter.delete('/deleteMe', authController.protect, userController.deleteMe)
 
+userRouter.patch('/updateMe', authController.protect, userController.updateMe )
+
+//getting users
 userRouter.route('/').get(userController.getAllUsers);
 userRouter.route('/:id').get(userController.getUser);
 

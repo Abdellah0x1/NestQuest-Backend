@@ -83,6 +83,7 @@ REST API for property listings with user authentication. Built with Express and 
 ## Scripts
 
 - `npm start` — start server with nodemon
+- `npm test` — placeholder test script
 
 ## API Base URL
 
@@ -107,14 +108,21 @@ Send the JWT in the `Authorization` header:
 - `POST /users/forgotPassword`
   - Body:
     - `email`
-- `POST /users/resetPassowrd/:token`
+- `POST /users/resetPassword/:token`
   - Body:
     - `password`, `passwordConfirm`
+- `PATCH /users/updatePassword` (protected)
+  - Body:
+    - `currentPassword`, `password`, `passwordConfirm`
 
 ### Users
 
 - `GET /users`
 - `GET /users/:id`
+- `PATCH /users/updateMe` (protected)
+  - Body:
+    - `name`, `email`
+- `DELETE /users/deleteMe` (protected)
 
 ### Properties
 
@@ -122,7 +130,7 @@ Send the JWT in the `Authorization` header:
 - `POST /properties` (protected)
 - `GET /properties/:id`
 - `PATCH /properties/:id` (protected)
-- `DELETE /properties/:id` (admin only)
+- `DELETE /properties/:id` (protected, admin only)
 - `GET /properties/top-rated`
 
 ## Query Parameters (Properties)
@@ -172,4 +180,4 @@ Errors use a consistent JSON shape with `status` and `message` fields. In develo
 ## Notes
 
 - All property mutations require a valid JWT.
-- The reset password route is spelled `resetPassowrd` in the API.
+- `GET /properties` is protected.

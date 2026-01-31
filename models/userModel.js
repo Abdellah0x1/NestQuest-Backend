@@ -40,9 +40,19 @@ const userSchema = new mongoose.Schema({
     },
     passwordChangedAt: Date,
     passwordResetToken: String,
-    passwordResetExpires: Date
+    passwordResetExpires: Date,
+    active: {
+        type: Boolean,
+        select: false,
+        default: true
+    }
 })
 
+userSchema.pre('save',function(next){
+    if(!this.isModified('password') || this.isNew) next();
+    this.passwordChangedAt = Date.now() - 1000;
+    
+})
 //hashing password
 
 userSchema.pre('save', async function(){
@@ -51,6 +61,12 @@ userSchema.pre('save', async function(){
 
     //removing passwordConfirm
     this.passwordConfirm = undefined;
+})
+
+// ony show active users
+
+userSchema.pre(/^find/, function(){
+    this.find({active: {$ne: true}})
 })
 
 //instance function for validating password 

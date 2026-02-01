@@ -1,7 +1,10 @@
 const express = require('express');
 const morgan = require('morgan');
 const AppError = require('./utils/AppError')
-
+const rateLimit = require('express-rate-limit')
+const xss = require('xss');
+const mongoSanitize = require('express-mongo-sanitize')
+const helmet = require('helmet')
 //requiring routes
 const propertyRouter = require('./routes/propertyRouter');
 const userRouter = require('./routes/userRouter')
@@ -10,14 +13,32 @@ const errorController = require('./controllers/errorController');
 
 const app = express();
 
-//auth middlewares
-
-
 
 //app middlewares
+//adding HTTP security headers
+app.use(helmet())
+
+//rate limiting
+const limiter =rateLimit({
+    max: 100,
+    window: 60 * 60 * 1000,
+    message: 'Too many requests from this IP'
+})
+
+app.use('/api',limiter)
+
+//preventing NoSQL query Injection
+
+app.use(mongoSanitize())
+
+//preventing XSS
+app.use(xss())
+
+
+
+if(process.env.NODE_ENV === 'development') app.use(morgan('dev'));
 
 app.use(express.json())
-app.use(morgan('dev'));
 
 
 app.use((req,res,next)=> {

@@ -16,6 +16,13 @@ REST API for property listings with user authentication. Built with Express and 
 - MongoDB, Mongoose
 - JWT auth, bcrypt
 
+## Security
+
+- HTTP security headers via `helmet`
+- Rate limiting on /api (100 requests per hour per IP)
+- NoSQL injection sanitization via `express-mongo-sanitize`
+- XSS protection middleware via `xss`
+
 ## Project Structure
 
 - app.js — Express app setup and routes

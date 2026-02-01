@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const morgan = require('morgan');
 const AppError = require('./utils/AppError')
 const rateLimit = require('express-rate-limit')
@@ -7,7 +8,8 @@ const mongoSanitize = require('express-mongo-sanitize')
 const helmet = require('helmet')
 //requiring routes
 const propertyRouter = require('./routes/propertyRouter');
-const userRouter = require('./routes/userRouter')
+const userRouter = require('./routes/userRouter');
+const compression = require('compression');
 
 const errorController = require('./controllers/errorController');
 
@@ -15,6 +17,12 @@ const app = express();
 
 
 //app middlewares
+
+app.use(cors({
+  origin: ['http://localhost:5173', 'http://localhost:3000'], 
+  credentials: true
+}));
+
 //adding HTTP security headers
 app.use(helmet())
 
@@ -40,6 +48,7 @@ if(process.env.NODE_ENV === 'development') app.use(morgan('dev'));
 
 app.use(express.json())
 
+app.use(compression())
 
 app.use((req,res,next)=> {
     req.requestDate = new Date().toISOString();

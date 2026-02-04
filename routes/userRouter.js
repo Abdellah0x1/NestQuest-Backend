@@ -25,6 +25,6 @@ userRouter.route('/').get(userController.getAllUsers);
 userRouter.route('/:id').get(userController.getUser);
 
 //getting current user
-userRouter.post('/getMe',authController.protect,userController.getMe)
+userRouter.get('/getMe',authController.protect,userController.getMe)
 
 module.exports = userRouter;

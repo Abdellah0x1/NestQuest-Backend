@@ -18,13 +18,13 @@ const app = express();
 
 //app middlewares
 
-app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:3000','https://nest-quest-client.vercel.app/'], 
-  credentials: true
-}));
+    app.use(cors({
+    origin: ['http://localhost:5173', 'http://localhost:3000','https://nest-quest-client.vercel.app'], 
+    credentials: true
+    }));
 
 //adding HTTP security headers
-app.use(helmet())
+// app.use(helmet())
 
 //rate limiting
 // const limiter = rateLimit({

@@ -27,20 +27,20 @@ app.use(cors({
 app.use(helmet())
 
 //rate limiting
-const limiter =rateLimit({
-    max: 100,
-    window: 60 * 60 * 1000,
-    message: 'Too many requests from this IP'
-})
+// const limiter = rateLimit({
+//     limit: 1000,
+//     windowMs: 60 * 60 * 1000,
+//     message: 'Too many requests from this IP'
+// })
 
-app.use('/api',limiter)
+// app.use('/api',limiter)
 
 //preventing NoSQL query Injection
 
-app.use(mongoSanitize())
-
+// app.use(mongoSanitize())
+    
 //preventing XSS
-app.use(xss())
+// app.use(xss())
 
 
 

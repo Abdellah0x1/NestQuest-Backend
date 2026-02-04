@@ -50,6 +50,15 @@ module.exports.deleteMe = catchAsync(async (req,res,next)=>{
     })
 })
 
+module.exports.getMe = (req,res,next)=>{
+    res.status(200).json({
+        status: 'sucess',
+        data: {
+            user: req.user
+        }
+    })
+}
+
 module.exports.getUser = catchAsync(async (req,res,next)=> {
     const user = await User.findById(req.params.id);
     res.send(200).json({

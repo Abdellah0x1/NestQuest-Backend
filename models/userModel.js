@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 const validator = require('validator')
 const bcrypt = require('bcryptjs');
 const crypto = require('crypto');
-const { parse } = require('dotenv');
 
 const userSchema = new mongoose.Schema({
     name:{
@@ -48,8 +47,8 @@ const userSchema = new mongoose.Schema({
     }
 })
 
-userSchema.pre('save',function(next){
-    if(!this.isModified('password') || this.isNew) next();
+userSchema.pre('save',function(){
+    if(!this.isModified('password') || this.isNew) return;
     this.passwordChangedAt = Date.now() - 1000;
     
 })
@@ -91,7 +90,6 @@ userSchema.methods.createPasswordResetToken = function(){
     // reset token expires in 10min
     this.passwordResetExpires = Date.now() + 10*60*1000;
     // console.log({resetToken}, this.passwordResetToken)
-
     return resetToken;
 }
 

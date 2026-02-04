@@ -8,8 +8,9 @@ const propertyRouter = express.Router();
 
 propertyRouter.route('/top-rated').get(aliasTopRated, getAllProperties)
 
-propertyRouter.route('/').get(authController.protect,getAllProperties).post(authController.protect,addProperty)
-propertyRouter.route('/:id').get(getProperty).patch(authController.protect,updateProperty).delete(authController.protect,authController.restrictTo('admin'),deleteProperty)
+propertyRouter.route('/').get(getAllProperties).post(authController.protect,addProperty)
+propertyRouter.route('/:id').get(getProperty).patch(authController.protect,updateProperty).delete(authController.protect,authController.restrictTo('admin'),deleteProperty);
+
 
 
 module.exports = propertyRouter;

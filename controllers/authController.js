@@ -119,7 +119,7 @@ module.exports.forgotPassword =catchAsync(async (req,res,next)=> {
         await sendEmail({
         email: req.body.email,
         subject: 'Your password reset token (valid 10min)',
-        message
+        text: message
         })
 
         res.status(200).json({

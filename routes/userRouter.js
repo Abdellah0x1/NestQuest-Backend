@@ -11,12 +11,8 @@ userRouter.post('/login',login)
 userRouter.post('/logout',logout)
 
 //password reset
-userRouter.pos
-
-
-\\\\\\\\\\\\\\\\\\\\\\\\\t
-8i('/forgotPassword', authController.forgotPassword);
-useOrRouter.post('/resetPassword/:token', authController.resetPassword);
+userRouter.post('/forgotPassword', authController.forgotPassword);
+userRouter.post('/resetPassword/:token', authController.resetPassword);
 
 //updating user password
 userRouter.patch('/updatePassword', authController.protect, authController.updatePassword)

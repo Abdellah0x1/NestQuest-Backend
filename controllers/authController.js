@@ -63,7 +63,6 @@ module.exports.login = catchAsync(async (req,res,next) => {
 
     //send token
     createSignToken(user,200,res)
-    
 })
 
 //middlewares for protected routes

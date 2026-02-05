@@ -12,7 +12,8 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: [true, 'Please provide an email'],
         validate: [validator.isEmail, 'Please provide a valid email'],
-        unique: true
+        unique: true,
+        trim: true
     },
     role: {
         type: String,
@@ -24,7 +25,8 @@ const userSchema = new mongoose.Schema({
         required: [true, 'Please provide a password'],
         required: true,
         minlength: 8,
-        select: false
+        select: false,
+        trim: true
     },
     passwordConfirm: {
         type: String,
@@ -35,7 +37,8 @@ const userSchema = new mongoose.Schema({
                 return el = this.password
             },
             message: 'passwords are not the same'
-        }
+        },
+        trim: true
     },
     passwordChangedAt: Date,
     passwordResetToken: String,
@@ -65,7 +68,7 @@ userSchema.pre('save', async function(){
 // ony show active users
 
 userSchema.pre(/^find/, function(){
-    this.find({active: {$ne: true}})
+    this.find({active: {$ne: false}})
 })
 
 //instance function for validating password 

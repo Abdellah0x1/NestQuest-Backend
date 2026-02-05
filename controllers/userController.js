@@ -24,8 +24,9 @@ module.exports.getAllUsers= catchAsync(async (req,res,next)=> {
 
 module.exports.updateMe = async (req,res,next)=>{
     // check for body contains password or passwordConfirm
+
     if(req.body.password || req.body.passwordConfirm) {
-        return next(new AppError('This route is not for updating password. Please use /updateMe',400))
+        return next(new AppError('This route is not for updating password. Please use /updatePassword',400))
     }
     // getting email and name from the body
     const filteredBody = filterObj(req.body, 'name', 'email');

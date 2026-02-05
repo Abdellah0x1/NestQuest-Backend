@@ -11,17 +11,23 @@ const propertyRouter = require('./routes/propertyRouter');
 const userRouter = require('./routes/userRouter');
 const compression = require('compression');
 
+const cookieParser = require('cookie-parser');
+
 const errorController = require('./controllers/errorController');
 
 const app = express();
 
 
 //app middlewares
+app.use(cookieParser());
 
-    app.use(cors({
-    origin: ['http://localhost:5173', 'http://localhost:3000','https://nest-quest-client.vercel.app'], 
-    credentials: true
-    }));
+app.use(cors({
+origin: ['http://localhost:5173', 'http://localhost:3000','https://nest-quest-client.vercel.app'], 
+credentials: true
+}));
+
+
+
 
 //adding HTTP security headers
 // app.use(helmet())

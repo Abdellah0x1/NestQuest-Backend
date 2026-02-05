@@ -18,7 +18,8 @@ const createSignToken = (user,statusCode,res)=>{
     //sent JWT in cookie
     const cookieOptions = {
         expires: new Date(Date.now() + process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000),
-        httpOnly: true
+        httpOnly: true,
+        sameSite: "lax",
     }
 
     if (process.env.NODE_ENV === 'production') cookieOptions.secure = true;
@@ -73,17 +74,22 @@ module.exports.protect = catchAsync(async (req,res,next)=>{
     if(req.headers.authorization && req.headers.authorization.startsWith("Bearer")){
         token = req.headers.authorization.split(" ")[1]
     }
+
+    if(!token && req.cookies?.jwt){
+        token = req.cookies.jwt;
+    }
+    
+
     if(!token){
         return next(new AppError('You are not logged in! please log in to get access',401 ))
     }
     //check if token is valid
     const decoded = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
-
     //check if user exists
     const currUser = await User.findById(decoded.id);
     if(!currUser) return next(new AppError("The user belongig to this token no longer exists",401))
     //check if password was changed after token was issued
-    if(currUser.passwordChangedAfter(token.iat)) return next(new AppError("User Recently Changed password! Please Log in again"),401)
+    if(currUser.passwordChangedAfter(decoded.iat)) return next(new AppError("User Recently Changed password! Please Log in again"),401)
     //grant access
     req.user = currUser;
     next()
@@ -161,6 +167,18 @@ module.exports.updatePassword = async (req,res,next)=> {
     
     //send JWT 
     createSignToken(user,200,res)
+}
+
+module.exports.logout = (req,res)=>{
+    res.cookie('jwt','loggedout',{
+        expiresIn: Date.now() + 10* 1000,
+        httpOnly: true,
+    })
+
+    res.status(200).json({
+        status: 'sucess'
+    })
+    
 }
 
 

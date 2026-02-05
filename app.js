@@ -17,6 +17,8 @@ const errorController = require('./controllers/errorController');
 
 const app = express();
 
+app.set('trust proxy', 1);
+
 
 //app middlewares
 app.use(cookieParser());

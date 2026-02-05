@@ -6,6 +6,7 @@ const sendEmail = async options => {
     const transporter = nodemailer.createTransport({
         host: process.env.EMAIL_HOST,
         port: process.env.EMAIL_PORT,
+        secure: true,
         auth: {
             user: process.env.EMAIL_USERNAME,
             pass: process.env.EMAIL_PASSWORD
@@ -13,7 +14,7 @@ const sendEmail = async options => {
     })
 
     const mailOptions = {
-        from: 'Abdellah EL GHENNAMI <hello@nestquest.net',
+        from: '<noreply@nestquest.net',
         to: options.email,
         subject: options.subject,
         text: options.text
@@ -21,3 +22,5 @@ const sendEmail = async options => {
     await transporter.sendMail(mailOptions);
 
 }
+
+module.exports  = sendEmail;

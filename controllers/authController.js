@@ -19,7 +19,7 @@ const createSignToken = (user,statusCode,res)=>{
     const cookieOptions = {
         expires: new Date(Date.now() + process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000),
         httpOnly: true,
-        sameSite: "none",
+        sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
     }
 
     if (process.env.NODE_ENV === 'production') cookieOptions.secure = true;
@@ -112,9 +112,8 @@ module.exports.forgotPassword =catchAsync(async (req,res,next)=> {
     const token  = user.createPasswordResetToken();
     await user.save({validateBeforeSave: false});
     //send token
-    const resetURL = `${req.protocol}://${req.get('host')}/${token}`;
+    const resetURL = `${process.env.FRONTEND_URL}/resetPassword/${token}`;
     const message = `Forgot your password? Sumbit a patch request with your new password and passwordConfirm to ${resetURL} \nIf you didn't foget your password then please just ignore this email!`;
-    
     try {
         await sendEmail({
         email: req.body.email,
@@ -139,7 +138,7 @@ module.exports.resetPassword = catchAsync(async (req,res, next)=>{
     //getting user based on the token
 
     const hashedToken = crypto.createHash('sha256').update(req.params.token).digest('hex');
-    const user = await User.findOne({passwordResetToken: req.params.token, passwordResetExpires: {$gt: Date.now()}});
+    const user = await User.findOne({passwordResetToken: hashedToken, passwordResetExpires: {$gt: Date.now()}});
     if(!user) return next(new AppError("Token is invalid or expired",401));
 
     //
@@ -151,7 +150,7 @@ module.exports.resetPassword = catchAsync(async (req,res, next)=>{
     await user.save();
 
     createSignToken(user,200,res)
-    
+
 })
 
 
